@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.terrainscan.controllers.TiendaOrganicoController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" opacity="0.48" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Login1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="160.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tienda de fertilizantes organicos">
+         <font>
+            <Font name="Bookman Old Style" size="34.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="exagroaloe" fitHeight="110.0" fitWidth="200.0" layoutX="32.0" layoutY="63.0" onMouseClicked="#exagroaloeOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/exagroaloe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="biofert" fitHeight="124.0" fitWidth="200.0" layoutX="313.0" layoutY="63.0" onMouseClicked="#biofertOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Biofert.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="masso" fitHeight="124.0" fitWidth="200.0" layoutX="586.0" layoutY="63.0" onMouseClicked="#massoOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/masso.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bures" fitHeight="148.0" fitWidth="200.0" layoutX="32.0" layoutY="235.0" onMouseClicked="#buresOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/bures.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="haifa" fitHeight="148.0" fitWidth="160.0" layoutX="333.0" layoutY="235.0" onMouseClicked="#haifaOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/haifa1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="projar" fitHeight="148.0" fitWidth="200.0" layoutX="586.0" layoutY="235.0" onMouseClicked="#projarOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/projar.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnVolver" fitHeight="72.0" fitWidth="74.0" layoutX="14.0" layoutY="420.0" onMouseClicked="#btnVolverOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/deshacer%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSalir" alignment="TOP_CENTER" layoutX="686.0" layoutY="438.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 30; -fx-background-color: #FFDAB9;" text="Salir">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.9893333315849304" blue="0.8399999737739563" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

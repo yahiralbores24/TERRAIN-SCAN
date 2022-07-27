@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.terrainscan.controllers.TiendaController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="816.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Login1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="275.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tienda Fertilizantes">
+         <font>
+            <Font name="Baskerville Old Face" size="34.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="fertiquim" fitHeight="172.0" fitWidth="186.0" layoutX="32.0" layoutY="77.0" onMouseClicked="#fertiquimOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/img/Fertiquim2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pacifex" fitHeight="104.0" fitWidth="200.0" layoutX="308.0" layoutY="93.0" onMouseClicked="#pacifexOnMouseCliked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Pacifex.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="agrogen" fitHeight="135.0" fitWidth="200.0" layoutX="588.0" layoutY="78.0" onMouseClicked="#agrogenOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Agrogen.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="agrifluide" fitHeight="112.0" fitWidth="218.0" layoutX="14.0" layoutY="249.0" onMouseClicked="#agrifluideOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Agrifluide.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="abssa" fitHeight="150.0" fitWidth="200.0" layoutX="594.0" layoutY="260.0" onMouseClicked="#abssaOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/img/Abssa.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fertinal" fitHeight="163.0" fitWidth="188.0" layoutX="314.0" layoutY="260.0" onMouseClicked="#fertinalOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Fertinal.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="btnVolver" fitHeight="70.0" fitWidth="74.0" layoutX="14.0" layoutY="416.0" onMouseClicked="#btnVolverOnMouseClicked" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/deshacer%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSalir" alignment="TOP_CENTER" layoutX="711.0" layoutY="433.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 30; -fx-background-color: #FFDAB9;" text="Salir">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.9893333315849304" blue="0.8399999737739563" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

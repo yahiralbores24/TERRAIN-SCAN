@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.terrainscan.controllers.PropuestasController">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="807.0" layoutX="-6.0" layoutY="-1.0" opacity="0.66" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/fondo1.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="136.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione que tipo de fertilizantes desea aplicar">
+         <font>
+            <Font name="Corbel Bold Italic" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnOrganico" layoutX="125.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#btnOrganicoOnMouseClicked" style="-fx-background-radius: 100; -fx-background-color: #FFDAB9;" text="Organico">
+         <font>
+            <Font name="Consolas Bold Italic" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnQuimico" layoutX="601.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#btnQuimicoOnMouseClicked" style="-fx-background-color: #FFDAB9; -fx-background-radius: 100;" text="Quimicos">
+         <font>
+            <Font name="Consolas Bold Italic" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="160.0" fitWidth="275.0" layoutX="41.0" layoutY="286.0" pickOnBounds="true" style="-fx-managed: 100;">
+         <image>
+            <Image url="@Assets/img/Abono-Orgánico.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="268.0" layoutX="487.0" layoutY="286.0" pickOnBounds="true">
+         <image>
+            <Image url="@Assets/img/Abono-Quimico.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="txtArea" layoutX="12.0" layoutY="11.0" onMouseClicked="#txtAreaOnMouseClicked" prefHeight="199.0" prefWidth="778.0">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="btnSalir" alignment="TOP_CENTER" layoutX="356.0" layoutY="451.0" mnemonicParsing="false" onMouseClicked="#btnSalirOnMouseClicked" prefHeight="27.0" prefWidth="90.0" style="-fx-background-radius: 30; -fx-background-color: #FFDAB9;" text="Salir">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.63">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.9893333315849304" blue="0.8399999737739563" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
